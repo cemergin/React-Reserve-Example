@@ -2,7 +2,7 @@ function catchErrors(error, displayError) {
   let errorMsg;
   if (error.response) {
     // The request was made and the server responded with a status code that is not in the range of 2XX
-    errorMsg = error.respose.data;
+    errorMsg = error.response.data;
     console.error("Error response", errorMsg);
 
     // For Cloudinary Image upload
