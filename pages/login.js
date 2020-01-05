@@ -75,7 +75,7 @@ function Login() {
             icon="sign in"
             type="sign in"
             color="orange"
-            contet="Signup"
+            content="Log in"
           />
         </Segment>
       </Form>

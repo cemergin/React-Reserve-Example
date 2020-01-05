@@ -21,7 +21,7 @@ function ProductAttributes({ description, _id }) {
       <Header as="h3">About this product</Header>
       <p>{description}</p>
       <Button
-        icon="trasj alternate outline"
+        icon="trash alternate outline"
         color="red"
         content="Delete Product"
         onClick={() => setModal(true)}
