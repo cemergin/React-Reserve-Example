@@ -21,6 +21,10 @@ function Cart({ products, user }) {
     setCartProducts(response.data);
   }
 
+  async function handleCheckout(productId) {
+    console.log("Checkout");
+  }
+
   return (
     <>
       <Segment>
@@ -29,7 +33,7 @@ function Cart({ products, user }) {
           user={user}
           products={cartProducts}
         />
-        <CartSummary products={cartProducts} />
+        <CartSummary products={cartProducts} handleCheckout={handleCheckout} />
       </Segment>
     </>
   );

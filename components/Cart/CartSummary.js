@@ -2,7 +2,7 @@ import { Button, Segment, Divider } from "semantic-ui-react";
 import React from "react";
 import calculateCartTotal from "../../utils/calculateCartTotal";
 
-function CartSummary({ products }) {
+function CartSummary({ products, handleCheckout }) {
   const [cartAmount, setCartAmount] = React.useState(0);
   const [stripeAmount, setStripeAmount] = React.useState(0);
   const [isCartEmpty, setCartEmpty] = React.useState(false);
@@ -25,6 +25,7 @@ function CartSummary({ products }) {
           disabled={isCartEmpty}
           floated="right"
           content="Checkout"
+          onClick={handleCheckout}
         />
       </Segment>{" "}
     </>
